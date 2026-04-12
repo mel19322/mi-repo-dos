@@ -137,8 +137,8 @@
         function desencriptarYProcesar(dataEncriptada) {
             try {
                 // He usado llaves genéricas de ejemplo, asegúrate de poner tus llaves reales si las cambiaste.
-                var llave = CryptoJS.enc.Utf8.parse('ListaBlindada123'); 
-                var vector = CryptoJS.enc.Utf8.parse('VectorSecreto321');
+                var llave = CryptoJS.enc.Utf8.parse('BingoGeniokpo123'); 
+                var vector = CryptoJS.enc.Utf8.parse('Lolograste654321');
                 var desencriptado = CryptoJS.AES.decrypt(dataEncriptada, llave, { iv: vector, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
                 var dataM3U = desencriptado.toString(CryptoJS.enc.Utf8);
                 if (!dataM3U) throw new Error("AES Falló");
